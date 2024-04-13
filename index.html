@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="dictionnary.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="titleRow">
+        <h1 class="title">English Dictionary</h1>
+      </div>
+      <div class="searchRow">
+        <input type="text" class="searchInput" placeholder="Type your word..">
+        <button type="submit" class="searchButton" onclick="getword()">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+      <div class="wordRow">
+        <h3>Word</h3>
+        <p class="word"></p>
+      </div>
+      <div class="meaningRow">
+        <h3>Meaning</h3>
+        <p class="meaning"></p>
+      </div>
+      <div class="exampleRow">
+        <h3>Example</h3>
+        <p class="example"></p>
+      </div>
+    </div>
+    <footer>
+      <marquee behavior="scroll" direction="left">Some words may not be in the API's dictionary Also, some wordds may have multiple meanings, so the API might not match your expected definition</marquee>
+    </footer>
+    <script src="dictionnary.js"></script>
+  </body>
+</html>
